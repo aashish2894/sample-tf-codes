@@ -4,10 +4,10 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 
-tflite_model_path = "/home/kaushikdas/aashish/multi-mnist/saved_models/worksheet.multi_digit_zone_clf_transformer_attempt_1.tflite"
+tflite_model_path = "/home/aashish/multi-mnist/saved_models/worksheet.multi_digit_zone_clf_transformer_attempt_1.tflite"
 interpreter = tf.lite.Interpreter(model_path=tflite_model_path)
 
-base_path = "/home/kaushikdas/aashish/multi-digit-dataset/output_comma_2/output_mix/test/combined_1_to_8_comma_actual_shape_real/"
+base_path = "/home/aashish/multi-digit-dataset/output_comma_2/output_mix/test/combined_1_to_8_comma_actual_shape_real/"
 img_name = "360000.png"
 orig_img = cv2.imread(base_path + img_name, 0)
 
